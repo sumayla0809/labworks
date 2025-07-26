@@ -1,0 +1,18 @@
+include <iostream>
+using namespace std ;
+ bool ispalindrome(int num){
+     int original = 0;
+     int reversed = 0;
+     while(num >0){
+         int digit = num %10;
+         reversed = reversed *10+digit;
+         num = num /10;
+     }
+     return original == reversed;
+ }
+int main() {
+cout << ispalindrome(123) ;
+ 
+
+    return 0;
+}
